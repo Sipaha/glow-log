@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Water drop / glow shape -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,28 C54,28 38,48 38,60 C38,69 45,76 54,76 C63,76 70,69 70,60 C70,48 54,28 54,28 Z" />
+    <!-- Small heart inside -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,50 C52,48 48,48 48,52 C48,56 54,60 54,60 C54,60 60,56 60,52 C60,48 56,48 54,50 Z" />
+</vector>

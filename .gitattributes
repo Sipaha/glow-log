@@ -1,0 +1,45 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Kotlin / Java sources
+*.kt text diff=kotlin
+*.java text diff=java
+*.kts text diff=kotlin
+
+# XML (layouts, manifests, resources)
+*.xml text
+
+# Properties
+*.properties text
+
+# Gradle
+*.gradle text
+*.gradle.kts text diff=kotlin
+gradle/wrapper/gradle-wrapper.jar binary
+
+# Shell scripts
+*.sh text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+
+# JSON
+*.json text
+
+# Markdown
+*.md text diff=markdown
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.svg text
+
+# Fonts
+*.ttf binary
+*.otf binary
+
+# Keystore
+*.jks binary
+*.keystore binary

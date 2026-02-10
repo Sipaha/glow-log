@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GlowLog</string>
+
+    <!-- Enum: MealContext -->
+    <string name="meal_fasting">Натощак</string>
+    <string name="meal_before">До еды</string>
+    <string name="meal_after_1h">1 ч после еды</string>
+    <string name="meal_after_2h">2 ч после еды</string>
+
+    <!-- Enum: ReadingStatus -->
+    <string name="status_normal">Норма</string>
+    <string name="status_borderline">Пограничный</string>
+    <string name="status_high">Повышено</string>
+
+    <!-- Enum: Arm -->
+    <string name="arm_left">Левая</string>
+    <string name="arm_right">Правая</string>
+
+    <!-- Enum: TimeOfDay -->
+    <string name="tod_morning">Утро</string>
+    <string name="tod_day">День</string>
+    <string name="tod_evening">Вечер</string>
+    <string name="tod_night">Ночь</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_glucose">Глюкоза</string>
+    <string name="nav_pressure">Давление</string>
+
+    <!-- Top bar titles -->
+    <string name="title_new_entry">Новая запись</string>
+    <string name="title_glucose_chart">График глюкозы</string>
+    <string name="title_bp_chart">График давления</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_sign_in">Вход</string>
+    <string name="title_editing">Редактирование</string>
+
+    <!-- Home screen -->
+    <string name="label_all_entries">Все записи</string>
+    <string name="empty_no_entries">Нет записей. Добавьте первое измерение.</string>
+    <string name="glucose_unit">ммоль/л</string>
+    <string name="label_pulse">, пульс %1$d</string>
+    <string name="label_arm_hand">%1$s рука</string>
+
+    <!-- Glucose list -->
+    <string name="fab_add_entry">Добавить запись</string>
+    <string name="empty_glucose_title">Нет записей глюкозы</string>
+    <string name="empty_glucose_subtitle">Нажмите + чтобы добавить первое измерение</string>
+
+    <!-- Blood pressure list -->
+    <string name="empty_bp_title">Нет записей давления</string>
+    <string name="empty_bp_subtitle">Нажмите + чтобы добавить первое измерение</string>
+
+    <!-- Add glucose -->
+    <string name="label_glucose_mmol">Глюкоза (ммоль/л)</string>
+    <string name="label_meal_context">Контекст измерения</string>
+    <string name="label_date_time">Дата и время</string>
+    <string name="label_note_optional">Заметка (необязательно)</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_add">Добавить</string>
+    <string name="error_glucose_value">Введите корректное значение (0.1–40.0)</string>
+
+    <!-- Add blood pressure -->
+    <string name="label_systolic">Сист.</string>
+    <string name="label_diastolic">Диаст.</string>
+    <string name="label_pulse_optional">Пульс (необязательно)</string>
+    <string name="label_arm">Рука</string>
+    <string name="label_complaints_optional">Жалобы (необязательно)</string>
+    <string name="error_systolic_value">Введите корректное значение (30–300)</string>
+    <string name="error_diastolic_value">Введите корректное значение (20–200)</string>
+
+    <!-- Charts -->
+    <string name="empty_chart_title">Нет данных для графика</string>
+    <string name="empty_chart_glucose_subtitle">Добавьте записи глюкозы за выбранный период</string>
+    <string name="empty_chart_bp_subtitle">Добавьте записи давления за выбранный период</string>
+    <string name="chart_glucose_title">Глюкоза (ммоль/л)</string>
+    <string name="chart_bp_title">Давление (мм рт. ст.)</string>
+    <string name="range_week">Неделя</string>
+    <string name="range_month">Месяц</string>
+
+    <!-- Settings -->
+    <string name="section_account">Аккаунт</string>
+    <string name="label_user">Пользователь</string>
+    <string name="label_sign_in_prompt">Войдите для синхронизации данных</string>
+    <string name="btn_sign_out">Выйти</string>
+    <string name="btn_sign_in_google">Войти через Google</string>
+    <string name="section_reminders">Напоминания</string>
+    <string name="reminder_morning">Утреннее (%1$s)</string>
+    <string name="reminder_evening">Вечернее (%1$s)</string>
+    <string name="reminder_after_meal">После еды</string>
+    <string name="section_tod_ranges">Время суток (начало периода, час)</string>
+    <string name="tod_ranges_subtitle">Определяется автоматически при добавлении записи давления</string>
+    <string name="section_export">Экспорт данных</string>
+    <string name="btn_export_glucose">Экспорт глюкозы (CSV)</string>
+    <string name="btn_export_bp">Экспорт давления (CSV)</string>
+    <string name="share_export">Экспорт %1$s</string>
+
+    <!-- Sign-in screen -->
+    <string name="sign_in_prompt">Войдите для синхронизации данных между устройствами</string>
+    <string name="error_sign_in_google">Ошибка входа через Google</string>
+
+    <!-- Dialogs -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Отмена</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Напоминания</string>
+    <string name="notification_channel_desc">Напоминания о записи измерений</string>
+    <string name="notification_morning_title">Утреннее измерение</string>
+    <string name="notification_morning_text">Пора измерить глюкозу натощак</string>
+    <string name="notification_evening_title">Вечернее измерение</string>
+    <string name="notification_evening_text">Не забудьте записать вечерние измерения</string>
+
+    <!-- CSV headers -->
+    <string name="csv_glucose_header">Дата,Время,Глюкоза (ммоль/л),Контекст,Статус,Заметка</string>
+    <string name="csv_bp_header">Дата,Утро АД правая,Утро АД левая,День АД правая,День АД левая,Вечер АД правая,Вечер АД левая,Ночь АД правая,Ночь АД левая,Пульс,Жалобы</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_back">Назад</string>
+    <string name="cd_chart">График</string>
+    <string name="cd_settings">Настройки</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GlowLog</string>
+
+    <!-- Enum: MealContext -->
+    <string name="meal_fasting">Fasting</string>
+    <string name="meal_before">Before meal</string>
+    <string name="meal_after_1h">1h after meal</string>
+    <string name="meal_after_2h">2h after meal</string>
+
+    <!-- Enum: ReadingStatus -->
+    <string name="status_normal">Normal</string>
+    <string name="status_borderline">Borderline</string>
+    <string name="status_high">Elevated</string>
+
+    <!-- Enum: Arm -->
+    <string name="arm_left">Left</string>
+    <string name="arm_right">Right</string>
+
+    <!-- Enum: TimeOfDay -->
+    <string name="tod_morning">Morning</string>
+    <string name="tod_day">Day</string>
+    <string name="tod_evening">Evening</string>
+    <string name="tod_night">Night</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_glucose">Glucose</string>
+    <string name="nav_pressure">Pressure</string>
+
+    <!-- Top bar titles -->
+    <string name="title_new_entry">New entry</string>
+    <string name="title_glucose_chart">Glucose chart</string>
+    <string name="title_bp_chart">Pressure chart</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_sign_in">Sign in</string>
+    <string name="title_editing">Editing</string>
+
+    <!-- Home screen -->
+    <string name="label_all_entries">All entries</string>
+    <string name="empty_no_entries">No entries. Add your first reading.</string>
+    <string name="glucose_unit">mmol/L</string>
+    <string name="label_pulse">pulse %1$d</string>
+    <string name="label_arm_hand">%1$s hand</string>
+
+    <!-- Glucose list -->
+    <string name="fab_add_entry">Add entry</string>
+    <string name="empty_glucose_title">No glucose entries</string>
+    <string name="empty_glucose_subtitle">Tap + to add your first reading</string>
+
+    <!-- Blood pressure list -->
+    <string name="empty_bp_title">No pressure entries</string>
+    <string name="empty_bp_subtitle">Tap + to add your first reading</string>
+
+    <!-- Add glucose -->
+    <string name="label_glucose_mmol">Glucose (mmol/L)</string>
+    <string name="label_meal_context">Measurement context</string>
+    <string name="label_date_time">Date and time</string>
+    <string name="label_note_optional">Note (optional)</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_add">Add</string>
+    <string name="error_glucose_value">Enter a valid value (0.1–40.0)</string>
+
+    <!-- Add blood pressure -->
+    <string name="label_systolic">Sys.</string>
+    <string name="label_diastolic">Dia.</string>
+    <string name="label_pulse_optional">Pulse (optional)</string>
+    <string name="label_arm">Arm</string>
+    <string name="label_complaints_optional">Complaints (optional)</string>
+    <string name="error_systolic_value">Enter a valid value (30–300)</string>
+    <string name="error_diastolic_value">Enter a valid value (20–200)</string>
+
+    <!-- Charts -->
+    <string name="empty_chart_title">No data for chart</string>
+    <string name="empty_chart_glucose_subtitle">Add glucose entries for the selected period</string>
+    <string name="empty_chart_bp_subtitle">Add pressure entries for the selected period</string>
+    <string name="chart_glucose_title">Glucose (mmol/L)</string>
+    <string name="chart_bp_title">Pressure (mmHg)</string>
+    <string name="range_week">Week</string>
+    <string name="range_month">Month</string>
+
+    <!-- Settings -->
+    <string name="section_account">Account</string>
+    <string name="label_user">User</string>
+    <string name="label_sign_in_prompt">Sign in to sync data</string>
+    <string name="btn_sign_out">Sign out</string>
+    <string name="btn_sign_in_google">Sign in with Google</string>
+    <string name="section_reminders">Reminders</string>
+    <string name="reminder_morning">Morning (%1$s)</string>
+    <string name="reminder_evening">Evening (%1$s)</string>
+    <string name="reminder_after_meal">After meal</string>
+    <string name="section_tod_ranges">Time of day (period start, hour)</string>
+    <string name="tod_ranges_subtitle">Determined automatically when adding a pressure entry</string>
+    <string name="section_export">Export data</string>
+    <string name="btn_export_glucose">Export glucose (CSV)</string>
+    <string name="btn_export_bp">Export pressure (CSV)</string>
+    <string name="share_export">Export %1$s</string>
+
+    <!-- Sign-in screen -->
+    <string name="sign_in_prompt">Sign in to sync data between devices</string>
+    <string name="error_sign_in_google">Google sign-in error</string>
+
+    <!-- Dialogs -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Reminders</string>
+    <string name="notification_channel_desc">Reminders to log readings</string>
+    <string name="notification_morning_title">Morning reading</string>
+    <string name="notification_morning_text">Time to measure fasting glucose</string>
+    <string name="notification_evening_title">Evening reading</string>
+    <string name="notification_evening_text">Don\'t forget to log evening readings</string>
+
+    <!-- CSV headers -->
+    <string name="csv_glucose_header">Date,Time,Glucose (mmol/L),Context,Status,Note</string>
+    <string name="csv_bp_header">Date,Morning BP right,Morning BP left,Day BP right,Day BP left,Evening BP right,Evening BP left,Night BP right,Night BP left,Pulse,Complaints</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_back">Back</string>
+    <string name="cd_chart">Chart</string>
+    <string name="cd_settings">Settings</string>
+</resources>
