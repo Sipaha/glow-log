@@ -1,7 +1,7 @@
 package com.glowlog.app.domain.model
 
 import java.time.LocalDate
-import java.time.ZoneOffset
+import java.time.ZoneId
 
 sealed class DateRange {
     data object Week : DateRange()
@@ -15,7 +15,7 @@ sealed class DateRange {
             is Month -> now.minusMonths(1) to now
             is Custom -> this.start to this.end
         }
-        return start.atStartOfDay(ZoneOffset.UTC).toInstant().toEpochMilli() to
-                end.plusDays(1).atStartOfDay(ZoneOffset.UTC).toInstant().toEpochMilli()
+        return start.atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli() to
+                end.plusDays(1).atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli()
     }
 }

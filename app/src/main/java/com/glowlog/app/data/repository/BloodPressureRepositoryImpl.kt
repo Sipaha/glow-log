@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import java.time.Instant
 import java.time.LocalDateTime
-import java.time.ZoneOffset
+import java.time.ZoneId
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -61,7 +61,7 @@ class BloodPressureRepositoryImpl @Inject constructor(
 }
 
 fun BloodPressureReadingEntity.toDomain(): BloodPressureReading {
-    val dateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(measuredAt), ZoneOffset.UTC)
+    val dateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(measuredAt), ZoneId.systemDefault())
     val armEnum = try { Arm.valueOf(arm) } catch (_: Exception) { Arm.LEFT }
     val todEnum = try { TimeOfDay.valueOf(timeOfDay) } catch (_: Exception) { TimeOfDay.MORNING }
     return BloodPressureReading(
@@ -85,7 +85,7 @@ fun BloodPressureReading.toEntity(createdAt: Long, updatedAt: Long): BloodPressu
         pulse = pulse,
         arm = arm.name,
         timeOfDay = timeOfDay.name,
-        measuredAt = measuredAt.atZone(ZoneOffset.UTC).toInstant().toEpochMilli(),
+        measuredAt = measuredAt.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli(),
         note = note,
         createdAt = createdAt,
         updatedAt = updatedAt,

@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import java.time.Instant
 import java.time.LocalDateTime
-import java.time.ZoneOffset
+import java.time.ZoneId
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -65,7 +65,7 @@ fun GlucoseReadingEntity.toDomain(): GlucoseReading {
     } catch (_: Exception) {
         MealContext.FASTING
     }
-    val dateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(measuredAt), ZoneOffset.UTC)
+    val dateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(measuredAt), ZoneId.systemDefault())
     return GlucoseReading(
         id = id,
         valueMmol = valueMmol,
@@ -81,7 +81,7 @@ fun GlucoseReading.toEntity(createdAt: Long, updatedAt: Long): GlucoseReadingEnt
         id = id,
         valueMmol = valueMmol,
         mealContext = mealContext.name,
-        measuredAt = measuredAt.atZone(ZoneOffset.UTC).toInstant().toEpochMilli(),
+        measuredAt = measuredAt.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli(),
         note = note,
         createdAt = createdAt,
         updatedAt = updatedAt,

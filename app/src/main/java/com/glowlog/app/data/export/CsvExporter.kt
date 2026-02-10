@@ -108,11 +108,7 @@ class CsvExporter @Inject constructor(
 
     private fun escapeCsv(value: String?): String {
         if (value.isNullOrBlank()) return ""
-        return if (value.contains(",") || value.contains("\"") || value.contains("\n")) {
-            "\"${value.replace("\"", "\"\"")}\""
-        } else {
-            value
-        }
+        return "\"${value.replace("\"", "\"\"")}\""
     }
 
     private fun writeAndGetUri(fileName: String, content: String): Uri {
