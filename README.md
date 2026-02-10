@@ -17,7 +17,13 @@ A pregnancy health diary for tracking blood glucose and blood pressure. Offline-
 
 ## Screenshots
 
-*Coming soon*
+<p align="center">
+  <img src="screenshots/home.jpg" width="19%" />
+  <img src="screenshots/glucose-list.jpg" width="19%" />
+  <img src="screenshots/add-glucose.jpg" width="19%" />
+  <img src="screenshots/blood-pressure-list.jpg" width="19%" />
+  <img src="screenshots/add-blood-pressure.jpg" width="19%" />
+</p>
 
 ## Tech Stack
 
